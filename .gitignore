@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.sync-staging-*/
+.sdlc-sync-*/
+.sdlc-upstream-backups/

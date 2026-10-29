@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "addyosmani-agent-skills": {
+      "url": "https://github.com/addyosmani/agent-skills.git",
+      "ref": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "items": [
+        {
+          "source_path": "skills/interview-me",
+          "destination": "skills/interview-me",
+          "name": "interview-me",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/idea-refine",
+          "destination": "skills/idea-refine",
+          "name": "idea-refine",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/spec-driven-development",
+          "destination": "skills/spec-driven-development",
+          "name": "spec-driven-development",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/api-and-interface-design",
+          "destination": "skills/api-and-interface-design",
+          "name": "api-and-interface-design",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/documentation-and-adrs",
+          "destination": "skills/documentation-and-adrs",
+          "name": "documentation-and-adrs",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/planning-and-task-breakdown",
+          "destination": "skills/planning-and-task-breakdown",
+          "name": "planning-and-task-breakdown",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/incremental-implementation",
+          "destination": "skills/incremental-implementation",
+          "name": "incremental-implementation",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/test-driven-development",
+          "destination": "skills/test-driven-development",
+          "name": "test-driven-development",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/git-workflow-and-versioning",
+          "destination": "skills/git-workflow-and-versioning",
+          "name": "git-workflow-and-versioning",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/source-driven-development",
+          "destination": "skills/source-driven-development",
+          "name": "source-driven-development",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/code-simplification",
+          "destination": "skills/code-simplification",
+          "name": "code-simplification",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/context-engineering",
+          "destination": "skills/context-engineering",
+          "name": "context-engineering",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/browser-testing-with-devtools",
+          "destination": "skills/browser-testing-with-devtools",
+          "name": "browser-testing-with-devtools",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/code-review-and-quality",
+          "destination": "skills/code-review-and-quality",
+          "name": "code-review-and-quality",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/security-and-hardening",
+          "destination": "skills/security-and-hardening",
+          "name": "security-and-hardening",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/ci-cd-and-automation",
+          "destination": "skills/ci-cd-and-automation",
+          "name": "ci-cd-and-automation",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/shipping-and-launch",
+          "destination": "skills/shipping-and-launch",
+          "name": "shipping-and-launch",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/observability-and-instrumentation",
+          "destination": "skills/observability-and-instrumentation",
+          "name": "observability-and-instrumentation",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/performance-optimization",
+          "destination": "extras/performance-optimization",
+          "name": "performance-optimization",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/frontend-ui-engineering",
+          "destination": "extras/frontend-ui-engineering",
+          "name": "frontend-ui-engineering",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/deprecation-and-migration",
+          "destination": "extras/deprecation-and-migration",
+          "name": "deprecation-and-migration",
+          "transformations": []
+        }
+      ]
+    },
+    "obra-superpowers": {
+      "url": "https://github.com/obra/superpowers.git",
+      "ref": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "items": [
+        {
+          "source_path": "skills/systematic-debugging",
+          "destination": "skills/systematic-debugging",
+          "name": "systematic-debugging",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/verification-before-completion",
+          "destination": "skills/verification-before-completion",
+          "name": "verification-before-completion",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/receiving-code-review",
+          "destination": "skills/receiving-code-review",
+          "name": "receiving-code-review",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/requesting-code-review",
+          "destination": "skills/requesting-code-review",
+          "name": "requesting-code-review",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/using-git-worktrees",
+          "destination": "skills/using-git-worktrees",
+          "name": "using-git-worktrees",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/finishing-a-development-branch",
+          "destination": "skills/finishing-a-development-branch",
+          "name": "finishing-a-development-branch",
+          "transformations": []
+        }
+      ]
+    },
+    "anthropics-skills": {
+      "url": "https://github.com/anthropics/skills.git",
+      "ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "license_file": "skills/frontend-design/LICENSE.txt",
+      "items": [
+        {
+          "source_path": "skills/webapp-testing",
+          "destination": "skills/webapp-testing",
+          "name": "webapp-testing",
+          "transformations": []
+        },
+        {
+          "source_path": "skills/frontend-design",
+          "destination": "extras/frontend-design",
+          "name": "frontend-design",
+          "transformations": []
+        }
+      ]
+    },
+    "mattpocock-skills": {
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "url": "https://github.com/mattpocock/skills.git"
+    },
+    "coreyhaines31-marketingskills": {
+      "commit": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
+      "url": "https://github.com/coreyhaines31/marketingskills.git"
+    },
+    "vercel-labs-agent-skills": {
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "url": "https://github.com/vercel-labs/agent-skills.git"
+    },
+    "github-awesome-copilot": {
+      "commit": "b6483db44fb602654bca6a097185fcaddb305f97",
+      "url": "https://github.com/github/awesome-copilot.git"
+    }
+  },
+  "managed_paths": [
+    "extras/browser-testing-with-devtools",
+    "extras/deprecation-and-migration",
+    "extras/frontend-design",
+    "extras/frontend-ui-engineering",
+    "extras/performance-optimization",
+    "extras/webapp-testing",
+    "skills/api-and-interface-design",
+    "skills/ci-cd-and-automation",
+    "skills/code-review-and-quality",
+    "skills/code-simplification",
+    "skills/context-engineering",
+    "skills/documentation-and-adrs",
+    "skills/git-workflow-and-versioning",
+    "skills/idea-refine",
+    "skills/incremental-implementation",
+    "skills/interview-me",
+    "skills/observability-and-instrumentation",
+    "skills/planning-and-task-breakdown",
+    "skills/receiving-code-review",
+    "skills/security-and-hardening",
+    "skills/shipping-and-launch",
+    "skills/source-driven-development",
+    "skills/spec-driven-development",
+    "skills/systematic-debugging",
+    "skills/test-driven-development",
+    "skills/using-git-worktrees",
+    "skills/verification-before-completion",
+    "third_party/addyosmani-agent-skills",
+    "third_party/anthropics-skills",
+    "third_party/coreyhaines31-marketingskills",
+    "third_party/github-awesome-copilot",
+    "third_party/mattpocock-skills",
+    "third_party/obra-superpowers",
+    "third_party/vercel-labs-agent-skills"
+  ],
+  "retired_paths": [
+    "extras/stripe-integration",
+    "skills/finishing-a-development-branch",
+    "skills/requesting-code-review"
+  ]
+}

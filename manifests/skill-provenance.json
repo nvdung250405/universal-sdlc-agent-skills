@@ -1,0 +1,681 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "skills/interview-me": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/interview-me",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/idea-refine": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/idea-refine",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/spec-driven-development": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/spec-driven-development",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/api-and-interface-design": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/api-and-interface-design",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/documentation-and-adrs": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/documentation-and-adrs",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/planning-and-task-breakdown": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/planning-and-task-breakdown",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/incremental-implementation": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/incremental-implementation",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/test-driven-development": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/test-driven-development",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/git-workflow-and-versioning": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/git-workflow-and-versioning",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/source-driven-development": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/source-driven-development",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/code-simplification": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/code-simplification",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/context-engineering": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/context-engineering",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/code-review-and-quality": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/code-review-and-quality",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/security-and-hardening": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/security-and-hardening",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/ci-cd-and-automation": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/ci-cd-and-automation",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/shipping-and-launch": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/shipping-and-launch",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/observability-and-instrumentation": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/observability-and-instrumentation",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/performance-optimization": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/performance-optimization",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/frontend-ui-engineering": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/frontend-ui-engineering",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/deprecation-and-migration": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/deprecation-and-migration",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/systematic-debugging": {
+      "upstream": "obra-superpowers",
+      "source_path": "skills/systematic-debugging",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "transformations": [
+        "Remove upstream superpowers: namespace prefixes from cross references."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/verification-before-completion": {
+      "upstream": "obra-superpowers",
+      "source_path": "skills/verification-before-completion",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/receiving-code-review": {
+      "upstream": "obra-superpowers",
+      "source_path": "skills/receiving-code-review",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/using-git-worktrees": {
+      "upstream": "obra-superpowers",
+      "source_path": "skills/using-git-worktrees",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/frontend-design": {
+      "upstream": "anthropics-skills",
+      "source_path": "skills/frontend-design",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "skills/requirements-engineering": {
+      "upstream": "agentic-sdlc-kit",
+      "source_path": "skills/requirements-engineering/SKILL.md",
+      "commit": "main",
+      "license": "Apache-2.0",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Retained formal requirements elicitation, functional/non-functional breakdown, requirement IDs, and RTM traceability."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "cda3268edecdcf71115eff3ba92665e4c90fa45093425fe713ab4cf69439e1b8"
+    },
+    "skills/software-architecture": {
+      "upstream": "agentic-sdlc-kit",
+      "source_path": "skills/software-architecture/SKILL.md",
+      "commit": "main",
+      "license": "Apache-2.0",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Retained architecture trade-off analysis, C4 diagramming, system decomposition, boundary design, and architecture documentation."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "801175158691c02652975e036dd7acd9527a1a76e363ad62ab49ebd9d2a28e40"
+    },
+    "skills/using-sdlc-skills": {
+      "upstream": "pack-owned",
+      "source_path": "skills/using-sdlc-skills",
+      "commit": "local-pack",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "pack-owned",
+      "refresh_policy": "local"
+    },
+    "skills/task-handoff": {
+      "upstream": "pack-owned",
+      "source_path": "skills/task-handoff",
+      "commit": "local-pack",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "pack-owned",
+      "refresh_policy": "local"
+    },
+    "skills/database-design": {
+      "upstream": "sickn33-agentic-awesome-skills",
+      "source_path": "skills/database-design/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved database selection, schema normalization, indexing strategies, migrations guides, and schema_validator.py helper script."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "56a7ffb7b4a4531be93a4d0376b52c378ca003fb8a48dc8ed038cdea7c895efc"
+    },
+    "extras/docker-expert": {
+      "upstream": "sickn33-agentic-awesome-skills",
+      "source_path": "skills/docker-expert/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; preserved container optimization, security hardening, multi-stage builds, and deployment guidance."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "ee1bf7e192236f0c3d5322d41e76d41e78062cb23e743fef492e5e9c2cba1125"
+    },
+    "extras/k6-load-testing": {
+      "upstream": "sickn33-agentic-awesome-skills",
+      "source_path": "skills/k6-load-testing/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved k6 performance testing, scenario scripting, CI/CD integration, and detailed guide reference."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "510969bd25c707eab2266d5bd7638301873e0169d61d12b8808858c4a210b10e"
+    },
+    "extras/terraform-specialist": {
+      "upstream": "sickn33-agentic-awesome-skills",
+      "source_path": "skills/terraform-specialist/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved Terraform and OpenTofu IaC module design, state management, and policy-as-code automation."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "0792ebcd4a36a47395f2a473389fc8d102299d64d29225dcc733ab34596252ae"
+    },
+    "extras/kubernetes-architect": {
+      "upstream": "sickn33-agentic-awesome-skills",
+      "source_path": "skills/kubernetes-architect/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved Kubernetes orchestration, GitOps deployment patterns, multi-cluster topology, and reliability guidance."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "c3471e8cd272c48f36ff573cf43d18bf098230f55572642f21c0dd21c63d80b4"
+    },
+    "extras/screen-reader-testing": {
+      "upstream": "wshobson-agents",
+      "source_path": "skills/screen-reader-testing/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved screen reader verification, ARIA announcement audits, accessibility workflows, and implementation playbook."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "3d760c9ccdc9dbcc5ca5c60b72a5ecdde0c465e4c4146e4910b3f7113bedb85b"
+    },
+    "extras/browser-testing-with-devtools": {
+      "upstream": "addyosmani-agent-skills",
+      "source_path": "skills/browser-testing-with-devtools",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "transformations": [
+        "Localize shared references into the skill directory at sync time."
+      ],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/webapp-testing": {
+      "upstream": "anthropics-skills",
+      "source_path": "skills/webapp-testing",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/api-contract-testing": {
+      "upstream": "api-contract-testing",
+      "source_path": "skills/api-contract-testing/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; adapted API contract testing for consumer-provider compatibility, synthetic fixtures, wire-level verification, and regression tests."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "ac0e7140a8f3bc64d2124b7b694b542ec7b1937d00cd3a693b150622392e1b8d"
+    },
+    "extras/pm-product-spec": {
+      "upstream": "uxcel-product-skills",
+      "source_path": "skills/pm-product-spec/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; adapted for PRD creation, product goals, scope boundaries, and non-story technical handoff."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "ffd3caf80fba70fefaca503f0ad13333f73a275e3cda5f86cd12a4648d4a68c8"
+    },
+    "extras/pm-user-story": {
+      "upstream": "uxcel-product-skills",
+      "source_path": "skills/pm-user-story/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; adapted for user story mapping and Given/When/Then acceptance criteria authoring into the canonical feature spec."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "f82065a439058f1da9310d2289dbac438936f357c4a416f462ccdd1e0b75c859"
+    },
+    "extras/pm-spec-quality-audit": {
+      "upstream": "uxcel-product-skills",
+      "source_path": "skills/pm-spec-quality-audit/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; structured spec quality review, gap analysis, and ambiguity audit before implementation."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "ef00f290b6d97655abbe48f4c252526b2829ab908ab29cf806f645cb0262068f"
+    },
+    "extras/secrets-management": {
+      "upstream": "wshobson-agents",
+      "source_path": "skills/secrets-management/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; preserved CI/CD credential security, workload identity, secret rotation procedures, and reference documentation for Vault and GitHub Secrets."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "07ecfc6ae7df48ce594c242b2f9fce635112b41355a6ab31c14e6001489c946d"
+    },
+    "extras/auth-implementation-patterns": {
+      "upstream": "wshobson-agents",
+      "source_path": "skills/auth-implementation-patterns/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Categorized into extras tier; preserved authentication and authorization patterns, token/session lifecycle, and threat boundaries; retained implementation playbook resource."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "ad039835e6a6af7a681ec9b192f6c2adfeae85a741de96b59ac9375b564f1d44"
+    },
+    "extras/skill-authoring": {
+      "upstream": "pack-owned",
+      "source_path": "extras/skill-authoring",
+      "commit": "local-pack",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "pack-owned",
+      "refresh_policy": "local"
+    },
+    "extras/service-mesh-observability": {
+      "upstream": "wshobson-agents",
+      "source_path": "plugins/cloud-infrastructure/skills/service-mesh-observability/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved service mesh observability, distributed tracing, envoy metrics, and SLO telemetry playbooks."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "aa550c484926a14f86e3d7559c0b7c039d1ab65e7eb8ee31ebf26c48985b6393"
+    },
+    "extras/cost-optimization": {
+      "upstream": "wshobson-agents",
+      "source_path": "plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md",
+      "commit": "main",
+      "license": "MIT",
+      "revision_status": "reviewed-main-unpinned",
+      "transformations": [
+        "Preserved multi-cloud FinOps resource rightsizing, cost anomaly detection, and budget governance."
+      ],
+      "kind": "adapted-derived-skill",
+      "refresh_policy": "manual-review-only",
+      "content_sha256": "039b8849eb7c72afbd32b9c08da9cf0aa9cbbad868eff551ed5fae54f1d1a278"
+    },
+    "extras/subagent-driven-development": {
+      "upstream": "obra-superpowers",
+      "source_path": "skills/subagent-driven-development",
+      "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/mcp-builder": {
+      "upstream": "anthropics-skills",
+      "source_path": "skills/mcp-builder",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/doc-coauthoring": {
+      "upstream": "anthropics-skills",
+      "source_path": "skills/doc-coauthoring",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/codebase-design": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/engineering/codebase-design",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/domain-modeling": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/engineering/domain-modeling",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/to-tickets": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/engineering/to-tickets",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/improve-codebase-architecture": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/engineering/improve-codebase-architecture",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/setup-pre-commit": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/misc/setup-pre-commit",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/git-guardrails-claude-code": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/misc/git-guardrails-claude-code",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/writing-for-agents": {
+      "upstream": "mattpocock-skills",
+      "source_path": "skills/productivity/writing-for-agents",
+      "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/customer-research": {
+      "upstream": "coreyhaines31-marketingskills",
+      "source_path": "skills/customer-research",
+      "commit": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/analytics": {
+      "upstream": "coreyhaines31-marketingskills",
+      "source_path": "skills/analytics",
+      "commit": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/ab-testing": {
+      "upstream": "coreyhaines31-marketingskills",
+      "source_path": "skills/ab-testing",
+      "commit": "0cd9b3a0ef4c411a1d690419ce843f2a1da32cce",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/vercel-react-best-practices": {
+      "upstream": "vercel-labs-agent-skills",
+      "source_path": "skills/react-best-practices",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/web-design-guidelines": {
+      "upstream": "vercel-labs-agent-skills",
+      "source_path": "skills/web-design-guidelines",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/writing-guidelines": {
+      "upstream": "vercel-labs-agent-skills",
+      "source_path": "skills/writing-guidelines",
+      "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    },
+    "extras/threat-model-analyst": {
+      "upstream": "github-awesome-copilot",
+      "source_path": "skills/threat-model-analyst",
+      "commit": "b6483db44fb602654bca6a097185fcaddb305f97",
+      "license": "MIT",
+      "transformations": [],
+      "kind": "vendored-upstream",
+      "refresh_policy": "pinned-sync"
+    }
+  },
+  "resources": {}
+}
