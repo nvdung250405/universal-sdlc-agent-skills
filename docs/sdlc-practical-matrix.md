@@ -4,6 +4,9 @@ The matrix is a practical reference, not a mandatory checklist. Projects should 
 
 Activities are iterative, overlapping, and non-linear. The matrix defines SDLC coverage scope rather than packaged inventory or mechanical process gates.
 
+- **Artifact Traceability:** The deliverables listed under **Artifacts** map 1:1 to the pack's 22 canonical artifact templates defined in [docs/stage-skill-map.md](stage-skill-map.md) and [templates/README.md](../templates/README.md).
+- **Inventory Reconciliation:** The 63 curated skills across the 16 stages correspond to the pack's physical tiering of 26 Lean Core skills (installed by default for everyday development discipline) and 37 Contextual Extras skills (loaded on demand via `using-sdlc-skills`), preserving tool-neutral clarity in the matrix.
+
 ---
 
 | Stage | Roles | Artifacts | Competencies | Skills |

@@ -50,12 +50,12 @@ Project provisioning, when useful:
 
 Task execution:
 
-`Task Request + Available Context → Normalized Task Context → Task Contract → Skill Selection → Runtime Provisioning → Execution → Verification → Completion Report`
+`Task Request + Available Context → Normalized Task Context → Task Contract → Skill & Workflow Selection → Template Scaffolding → Execution → Verification → Completion Report`
 
 - **Normalize context:** identify the goal, constraints, confirmed facts, evidence-based inferences, assumptions, and material unknowns. Reuse known context rather than forcing it into a rigid intake form.
 - **Define the task contract:** state the intended outcome, applicable output contract, acceptance criteria, and needed checks. Keep it lightweight and internal for simple tasks; persist it when the task's complexity or collaboration needs justify it.
-- **Select skills:** prefer the Project Skill Set when it exists. For a standalone task or a project without a prepared set, select directly from the Packaged Inventory using the task context. Do not create a project profile solely to perform a simple task.
-- **Provision skills:** determine which selected skills are available to the runtime and how they are exposed. Load full instructions only for the selected skills when the runtime supports selective loading.
+- **Select skills and workflows:** prefer the Project Skill Set when it exists. For a standalone task or a project without a prepared set, select directly from the Packaged Inventory using the task context and determine whether a multi-step coordination workflow (such as `feature-loop` or `bug-fix`) governs the lifecycle.
+- **Scaffold template & provision runtime:** resolve the matching starter template (from canonical `templates/` or router assets) and scaffold the artifact skeleton into the project's target destination path before domain authoring; ensure only relevant skill instructions are activated in the runtime context.
 - **Execute and verify:** use the chosen skills and applicable project conventions, then check the result against the task contract. Revisit selection or earlier steps when new evidence materially changes the task.
 - **Report honestly:** state what was completed, what was checked, the evidence available, and any unresolved limitation. If no suitable skill is available, proceed without pretending one was used, when safe and reasonable; otherwise report the blocker.
 
@@ -133,7 +133,7 @@ Avoid abstractions that have no current consumer. A new runtime or provider shou
 These describe responsibilities, not a claim that every directory or automation already exists. Keep this map aligned with the actual repository; do not create empty directories merely to match the document.
 
 - `skills/`: self-contained skill packages and supporting references/assets. Upstream content stays close to source where practical; local adaptations are explicit.
-- `workflows/`: pack-level coordination, entry conditions, handoffs, transitions, and checks. Do not copy entire skill procedures into workflows.
+- `workflows/`: pack-level coordination, entry conditions, handoffs, transitions, and checks across 11 standardized workflows covering 5 core scenario groups (Construction: `full-sdlc`, `feature-loop`, `quick-change`; Defect Resolution: `bug-fix`, `incident-response`; Refactoring: `refactoring`; Optimization & Maintenance: `performance-tuning`, `dependency-upgrade`, `deprecation-and-migration`; Coordination: `agent-handoff-contract`). Do not copy entire skill procedures into workflows.
 - `templates/`: reusable, agent-neutral artifact structures aligned with canonical contracts.
 - `adapters/`: runtime-specific configuration, capability declarations, path mappings, and installation behavior. Adapters do not own canonical SDLC policy.
 - `manifests/`: authoritative machine-readable records for packaged skills, stable IDs, provenance, revisions, hashes, classifications, and applicable compatibility metadata.
