@@ -1,43 +1,57 @@
 {
   "schema_version": 1,
-  "note": "These are configurable conventional paths, not guarantees of permanent vendor behavior. Use --dest when the local installation differs.",
+  "note": "These are configurable conventional paths, not guarantees of permanent vendor behavior. Use --dest when the local installation differs. 'loading_mode' describes the actual skill loading behavior of the runtime: 'lazy' means skill SKILL.md content is loaded only when the skill is explicitly invoked or referenced; 'eager' means all installed skill content is injected into the context at startup; 'unknown' means the pack cannot determine the behavior without testing.",
   "agents": {
     "claude": {
       "project": ".claude/skills",
       "global": "~/.claude/skills",
+      "loading_mode": "lazy",
+      "selective_loading": true,
       "docs": "https://docs.anthropic.com/en/docs/claude-code/skills"
     },
     "codex": {
       "project": ".agents/skills",
       "global": "~/.agents/skills",
+      "loading_mode": "unknown",
+      "selective_loading": null,
       "docs": "https://developers.openai.com/codex/skills"
     },
     "gemini": {
       "project": ".gemini/skills",
       "global": "~/.gemini/skills",
+      "loading_mode": "unknown",
+      "selective_loading": null,
       "docs": "https://github.com/google-gemini/gemini-cli"
     },
     "cursor": {
       "project": ".cursor/skills",
       "global": "~/.cursor/skills",
+      "loading_mode": "unknown",
+      "selective_loading": null,
       "docs": "https://docs.cursor.com/context/skills"
     },
     "copilot": {
       "project": ".github/skills",
       "global": "~/.copilot/skills",
+      "loading_mode": "unknown",
+      "selective_loading": null,
       "docs": "https://docs.github.com/en/copilot"
     },
     "antigravity": {
       "project": ".agents/skills",
       "global": "~/.gemini/config/skills",
+      "loading_mode": "lazy",
+      "selective_loading": true,
       "docs": "https://antigravity.google/docs/skills?app=antigravity-ide",
-      "notes": "Antigravity IDE. Workspace path is .agents/skills; global path is ~/.gemini/config/skills."
+      "notes": "Antigravity IDE. Skills are listed in system instructions by name; SKILL.md content is loaded on demand when the skill is invoked. Workspace path is .agents/skills; global path is ~/.gemini/config/skills."
     },
     "antigravity-cli": {
       "project": ".agents/skills",
       "global": "~/.gemini/antigravity-cli/skills",
+      "loading_mode": "lazy",
+      "selective_loading": true,
       "docs": "https://antigravity.google/docs/skills?app=antigravity",
-      "notes": "Antigravity CLI. Workspace path is .agents/skills; global path is ~/.gemini/antigravity-cli/skills."
+      "notes": "Antigravity CLI. Skills are listed by name; SKILL.md content is loaded on demand when the skill is invoked. Workspace path is .agents/skills; global path is ~/.gemini/antigravity-cli/skills."
     }
   }
 }

@@ -79,19 +79,14 @@ Mỗi tạo phẩm chuẩn hóa (canonical artifact) chỉ do một kỹ năng c
 
 ## 3. Cơ chế Nạp Kỹ năng theo Nhu cầu & Chống Quá tải Ngữ cảnh (Demand-Driven Loading & Anti-Overload)
 
-Quá trình thực thi tác vụ của agent tuân thủ vòng đời 5 bước theo thiết kế kiến trúc, đảm bảo **nạp đúng theo bối cảnh (context-driven)** và **tuyệt đối không làm quá tải ngữ cảnh (anti-overload)**:
+Quá trình thực thi tác vụ của agent tuân thủ vòng đời 5 bước theo thiết kế kiến trúc (xem sơ đồ và định nghĩa chuẩn tại [`docs/architecture.md` Section 4.3](architecture.md) và router [`skills/using-sdlc-skills/SKILL.md`](../skills/using-sdlc-skills/SKILL.md)), đảm bảo **nạp đúng theo bối cảnh (context-driven)** và **tuyệt đối không làm quá tải ngữ cảnh (anti-overload)**.
 
-```
-Task Intake ──► Discover & Select ──► Load & Scaffold ──► Execute Work ──► Verify & Handoff
-      │                 │                     │                   │                 │
-  Classify       Workflow + Skills       Read Workflow &      Domain Work      Evidence-backed
-   Stage          + Template             Scaffold Template   (Code/Spec/Design)   Check
-```
+> **Nguyên tắc cốt lõi — Installation ≠ Selection ≠ Context Loading:** 26 Core skills **được cài đặt** (installed) để luôn có mặt trên disk, nhưng không có nghĩa là tất cả đều được nạp vào cửa sổ ngữ cảnh cùng lúc. Mỗi task chỉ nạp file SKILL.md của các skill thực sự cần dùng cho bước công việc đó. Xem định nghĩa chuẩn "Task Active Skills" tại `architecture.md`.
 
 1. **Tiếp nhận tác vụ (Task Intake)**: Phân loại mục tiêu công việc theo 1 trong 16 Stages SDLC.
 2. **Khám phá & Tuyển chọn (Discover & Select — The SDLC Triad)**:
    - **Chọn Workflow:** Xác định kịch bản điều phối phù hợp (`full-sdlc.md`, `feature-loop.md`, `bug-fix.md`, `quick-change.md`, `incident-response.md`, `experimentation-loop.md`, `deprecation-and-migration.md`, `agent-handoff-contract.md`).
-   - **Chọn Kỹ năng:** Xác định *Tập nhỏ nhất đủ dùng (Smallest Sufficient Set)*: 26 Core skills là kỷ luật nền tảng; chỉ nạp thêm 1–2 Extras skills khi tech stack hoặc domain thực sự yêu cầu.
+   - **Chọn Kỹ năng:** Xác định *Tập nhỏ nhất đủ dùng (Smallest Sufficient Set)*: 26 Core skills **được cài đặt sẵn** (installed) không có nghĩa là tất cả đều được nạp vào ngữ cảnh cùng lúc — chỉ nạp các skill thực sự cần cho bước công việc hiện tại. Chỉ nạp thêm 1–2 Extras skills khi tech stack hoặc domain thực sự yêu cầu và skill đó cung cấp năng lực riêng biệt.
    - **Chọn Template:** Tra cứu bảng khế ước tạo phẩm để xác định file starter template tương ứng.
 3. **Nạp Quy trình & Dựng khung Tạo phẩm (Load Workflow & Scaffold Template)**:
    - Nạp các bước của workflow đã chọn vào ngữ cảnh hoạt động.

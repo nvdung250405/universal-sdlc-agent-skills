@@ -21,7 +21,7 @@ Task Intake ──► Discover & Select ──► Load & Scaffold ──► Exec
 1. **Task Intake & Stage Classification**: Analyze user request context and map it to the corresponding SDLC Stage (Discovery, Requirements, Architecture, Planning, Implementation, Testing, Review, Release, Operations, Maintenance, Learning, Security, Platform, Governance, Docs, Cost).
 2. **Discover & Select (The SDLC Triad: Workflow, Skills, Artifact)**:
    - **Target Workflow:** Resolve the procedural workflow governing the task (e.g. `full-sdlc.md`, `feature-loop.md`, `bug-fix.md`, `quick-change.md`, `incident-response.md`, `experimentation-loop.md`, `deprecation-and-migration.md`, `agent-handoff-contract.md`). Read from `workflows/<name>.md` or router assets `assets/workflows/<name>.md`.
-   - **Target Skills:** Select the Smallest Sufficient Set (26 Core discipline skills always active + target Extras specialist skills chosen based on tech stack, cloud, or domain).
+   - **Target Skills:** Select the Smallest Sufficient Set. Core skills are always **installed** (available on disk) but not all loaded into context simultaneously — load only the skills actually needed for this task step. Add Extras specialist skills based on tech stack, cloud, or domain when they supply distinct required capability.
    - **Artifact & Starter Template Resolution:** Determine if the task produces a canonical artifact. If yes, select the matching starter template (e.g., `feature-spec.md`, `ADR.md`, `architecture-overview.md`, `tasks.md`, `incident-postmortem.md`, `threat-model.md`).
 3. **Load Workflow & Scaffold Template**:
    - Load the procedural steps from the resolved workflow into active context.
