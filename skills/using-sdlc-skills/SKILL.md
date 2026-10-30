@@ -74,22 +74,57 @@ Task Intake ──► Discover & Select ──► Load & Scaffold ──► Exec
 
 Use repository-native conventions if equivalent artifacts already exist. Otherwise prefer:
 
-- `docs/discovery/[initiative]/opportunity-brief.md`: problem framing, target users, validation findings and initial hypothesis.
-- `docs/project-context.md` and `docs/constitution.md`: context, constraints, engineering policies and Definition of Done.
-- `docs/prd.md`: product intent, problem/evidence, goals/metrics, non-goals, epics, risks and assumptions; optional for small changes.
-- `docs/features/<feature-id>/spec.md`: canonical feature specification, containing User Stories, stable `US-*` IDs, `AC-*` Given/When/Then scenarios where appropriate, rules, edge cases, dependencies and open questions.
-- `docs/srs.md` and `docs/use-cases.md`: optional formal system requirements/use cases for complex or compliance-heavy work.
-- `docs/rtm.md`: optional requirement-to-design/task/test traceability ledger for projects that need it.
-- `docs/architecture.md` and `docs/adr/ADR-NNN-*.md`: system architecture and material individual decisions.
-- `docs/features/<feature-id>/technical-design.md`: detailed design only when needed.
-- `docs/features/<feature-id>/tasks.md`: the single authoritative final task list for that feature.
-- `.agent/tasks/<task-id>.md`: active task session state, progress, and role handoffs.
-- `docs/features/<feature-id>/acceptance-report.md`: verification evidence for non-trivial features/releases.
-- `docs/incidents/[id]/postmortem.md` and `docs/runbooks/[service].md`: root cause investigations and operational instructions.
-- `docs/security/threat-model-[system].md`: STRIDE-A threat modeling and risk mitigations.
-- `docs/experiments/[id].md` and `docs/analytics/tracking-plan.md`: growth experimentation and telemetry tracking taxonomy.
+- `docs/discovery/[initiative]/opportunity-brief.md`: problem framing, target users, validation findings and initial hypothesis (seeded from `templates/opportunity-brief.md`).
+- `docs/constitution.md` (or `AGENTS.md`): context, constraints, engineering policies and Definition of Done (seeded from `templates/constitution.md`).
+- `docs/prd.md`: product intent, problem/evidence, goals/metrics, non-goals, epics, risks and assumptions; optional for small changes (seeded from `templates/PRD.md`).
+- `docs/features/<feature-id>/spec.md`: canonical feature specification, containing User Stories, stable `US-*` IDs, `AC-*` Given/When/Then scenarios where appropriate, rules, edge cases, dependencies and open questions (seeded from `templates/feature-spec.md`).
+- `docs/specs/SRS.md` (or `docs/srs.md`): optional formal system requirements for complex or compliance-heavy work (seeded from `templates/SRS.md`).
+- `docs/specs/RTM.md` (or `docs/rtm.md`): optional requirement-to-design/task/test traceability ledger for projects that need it (seeded from `templates/RTM.md`).
+- `docs/architecture.md`: system architecture overview, boundaries, C4 models, and data ownership (seeded from `templates/architecture-overview.md`).
+- `docs/adr/ADR-NNN-[slug].md`: architecture decision records with trade-offs and options considered (seeded from `templates/ADR.md`).
+- `docs/features/<feature-id>/design.md` (or `technical-design.md`): detailed design specification only when needed (seeded from `templates/DDS.md`).
+- `docs/features/<feature-id>/plan.md`: implementation plan and execution strategy (seeded from `templates/plan.md`).
+- `docs/features/<feature-id>/tasks.md`: the single authoritative final task list for that feature (seeded from `templates/tasks.md`).
+- `.agent/tasks/<task-id>.md`: active task session state, progress, and role handoffs (seeded from `templates/task-handoff.md`).
+- `docs/features/<feature-id>/acceptance-report.md`: verification evidence for non-trivial features/releases (seeded from `templates/acceptance-report.md`).
+- `.github/pull_request_template.md` (or PR body): pull request description, motivation, and verification evidence (seeded from `templates/pull-request.md`).
+- `docs/releases/v[X.Y.Z].md`: release notes, changelog, and migration procedures (seeded from `templates/release-notes.md`).
+- `docs/releases/release-checklist.md`: pre-deployment quality, security, and rollback readiness gates (seeded from `templates/release-checklist.md`).
+- `docs/incidents/[YYYYMMDD-slug]/postmortem.md`: root cause investigations and corrective actions (seeded from `templates/incident-postmortem.md`).
+- `docs/runbooks/[service-name].md`: operational runbooks, triage procedures, and health metrics (seeded from `templates/runbook.md`).
+- `docs/migrations/[slug]-deprecation.md`: deprecation notices and 4-phase Expand/Contract zero-downtime guides (seeded from `templates/deprecation-notice.md`).
+- `docs/experiments/[exp-id]-[slug].md`: growth experimentation briefs and hypothesis metrics (seeded from `templates/experiment-brief.md`).
+- `docs/analytics/tracking-plan.md`: telemetry event tracking taxonomy and schemas (seeded from `templates/tracking-plan.md`).
+- `docs/security/threat-model-[system].md`: STRIDE-A threat modeling and risk mitigations (seeded from `templates/threat-model.md`).
 
-Templates in `templates/` are starters, not required extra documents. Do not create both `feature-spec.md` and `spec.md` for the same feature; copy the selected template into the canonical path instead of maintaining two authoritative files. See `templates/README.md` for the complete contract mapping.
+### Artifact & Template Contract Mapping
+
+| Stage | Expected Canonical Artifact | Starter Template | Primary Owner Skill |
+|---|---|---|---|
+| **Discovery** | `docs/discovery/[initiative]/opportunity-brief.md` | `templates/opportunity-brief.md` | `interview-me`, `idea-refine`, `customer-research` |
+| **Requirements** | `docs/prd.md` | `templates/PRD.md` | `pm-product-spec` |
+| **Requirements** | `docs/features/<feature-id>/spec.md` | `templates/feature-spec.md` | `spec-driven-development`, `pm-user-story` |
+| **Requirements** | `docs/specs/SRS.md` (or `docs/srs.md`) | `templates/SRS.md` | `requirements-engineering` |
+| **Requirements** | `docs/specs/RTM.md` (or `docs/rtm.md`) | `templates/RTM.md` | `requirements-engineering` |
+| **Architecture** | `docs/architecture.md` | `templates/architecture-overview.md` | `software-architecture` |
+| **Architecture** | `docs/adr/ADR-NNN-[slug].md` | `templates/ADR.md` | `documentation-and-adrs` |
+| **Architecture** | `docs/features/<feature-id>/design.md` | `templates/DDS.md` | `software-architecture`, `codebase-design` |
+| **Planning** | `docs/features/<feature-id>/plan.md` | `templates/plan.md` | `spec-driven-development`, `planning-and-task-breakdown` |
+| **Planning** | `docs/features/<feature-id>/tasks.md` | `templates/tasks.md` | `planning-and-task-breakdown` |
+| **Planning** | `.agent/tasks/<task-id>.md` | `templates/task-handoff.md` | `task-handoff` |
+| **Verification** | `docs/features/<feature-id>/acceptance-report.md` | `templates/acceptance-report.md` | `verification-before-completion` |
+| **Review** | `.github/pull_request_template.md` (or PR body) | `templates/pull-request.md` | `code-review-and-quality` |
+| **Release** | `docs/releases/v[X.Y.Z].md` | `templates/release-notes.md` | `shipping-and-launch` |
+| **Release** | `docs/releases/release-checklist.md` | `templates/release-checklist.md` | `shipping-and-launch` |
+| **Operations** | `docs/incidents/[YYYYMMDD-slug]/postmortem.md` | `templates/incident-postmortem.md` | `observability-and-instrumentation` |
+| **Operations** | `docs/runbooks/[service-name].md` | `templates/runbook.md` | `observability-and-instrumentation` |
+| **Evolution** | `docs/migrations/[slug]-deprecation.md` | `templates/deprecation-notice.md` | `deprecation-and-migration` |
+| **Learning** | `docs/experiments/[exp-id]-[slug].md` | `templates/experiment-brief.md` | `ab-testing` |
+| **Learning** | `docs/analytics/tracking-plan.md` | `templates/tracking-plan.md` | `analytics` |
+| **Security** | `docs/security/threat-model-[system].md` | `templates/threat-model.md` | `threat-model-analyst` |
+| **Governance** | `AGENTS.md` / `docs/constitution.md` | `templates/constitution.md` | `context-engineering`, `writing-for-agents` |
+
+Templates in `templates/` (and router assets `assets/templates/`) are starters, not required extra documents. Do not create both `feature-spec.md` and `spec.md` for the same feature; copy the selected template into the canonical path instead of maintaining two authoritative files. See `templates/README.md` for full details.
 
 ## Cross-skill invariants
 

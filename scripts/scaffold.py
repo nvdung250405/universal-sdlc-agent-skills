@@ -12,16 +12,21 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Mapping of artifact aliases to (template_filename, default_destination_pattern)
 ARTIFACT_MAP: dict[str, tuple[str, str]] = {
-    "spec": ("feature-spec.md", "docs/features/{id}/spec.md"),
+    "brief": ("opportunity-brief.md", "docs/discovery/{id}/opportunity-brief.md"),
     "prd": ("PRD.md", "docs/prd.md"),
-    "adr": ("ADR.md", "docs/adr/ADR-{id}-{slug}.md"),
+    "spec": ("feature-spec.md", "docs/features/{id}/spec.md"),
+    "srs": ("SRS.md", "docs/specs/SRS.md"),
+    "rtm": ("RTM.md", "docs/specs/RTM.md"),
     "arch": ("architecture-overview.md", "docs/architecture.md"),
+    "adr": ("ADR.md", "docs/adr/ADR-{id}-{slug}.md"),
+    "design": ("DDS.md", "docs/features/{id}/design.md"),
     "plan": ("plan.md", "docs/features/{id}/plan.md"),
     "tasks": ("tasks.md", "docs/features/{id}/tasks.md"),
     "handoff": ("task-handoff.md", ".agent/tasks/{id}.md"),
     "acceptance": ("acceptance-report.md", "docs/features/{id}/acceptance-report.md"),
     "pr": ("pull-request.md", ".github/pull_request_template.md"),
     "release": ("release-notes.md", "docs/releases/v{id}.md"),
+    "checklist": ("release-checklist.md", "docs/releases/release-checklist.md"),
     "postmortem": ("incident-postmortem.md", "docs/incidents/{id}/postmortem.md"),
     "runbook": ("runbook.md", "docs/runbooks/{id}.md"),
     "deprecation": ("deprecation-notice.md", "docs/migrations/{id}-deprecation.md"),

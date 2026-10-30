@@ -59,15 +59,19 @@ Mỗi tạo phẩm chuẩn hóa (canonical artifact) chỉ do một kỹ năng c
 | **Requirements** | Formal SRS & Traceability Matrix | `templates/SRS.md`, `templates/RTM.md` | `docs/specs/SRS.md`, `docs/specs/RTM.md` | `requirements-engineering` |
 | **Architecture** | System Architecture Overview | `templates/architecture-overview.md` | `docs/architecture.md` | `software-architecture` |
 | **Architecture** | Architecture Decision Record | `templates/ADR.md` | `docs/adr/ADR-NNN-[slug].md` | `documentation-and-adrs` |
-| **Planning** | Technical Plan & Task List | `templates/plan.md`, `templates/tasks.md` | `docs/features/<feature-id>/tasks.md` | `planning-and-task-breakdown` |
+| **Architecture** | Detailed Design Specification | `templates/DDS.md` | `docs/features/<feature-id>/design.md` | `software-architecture`, `codebase-design` |
+| **Planning** | Technical Plan & Strategy | `templates/plan.md` | `docs/features/<feature-id>/plan.md` | `spec-driven-development`, `planning-and-task-breakdown` |
+| **Planning** | Authoritative Task Breakdown | `templates/tasks.md` | `docs/features/<feature-id>/tasks.md` | `planning-and-task-breakdown` |
 | **Planning** | Task Session & Role Handoff | `templates/task-handoff.md` | `.agent/tasks/<task-id>.md` | `task-handoff` |
 | **Verification** | Acceptance & Verification Report | `templates/acceptance-report.md` | `docs/features/<feature-id>/acceptance-report.md` | `verification-before-completion` |
 | **Review** | Pull Request Description & Review | `templates/pull-request.md` | `.github/pull_request_template.md` (hoặc PR body) | `code-review-and-quality` |
-| **Release** | Release Notes & Readiness Gate | `templates/release-notes.md`, `templates/release-checklist.md` | `docs/releases/v[X.Y.Z].md` | `shipping-and-launch` |
+| **Release** | Release Notes & Changelog | `templates/release-notes.md` | `docs/releases/v[X.Y.Z].md` | `shipping-and-launch` |
+| **Release** | Release Readiness Gate | `templates/release-checklist.md` | `docs/releases/release-checklist.md` | `shipping-and-launch` |
 | **Operations** | Incident Postmortem | `templates/incident-postmortem.md` | `docs/incidents/[YYYYMMDD-slug]/postmortem.md` | `observability-and-instrumentation` |
 | **Operations** | Operational Runbook | `templates/runbook.md` | `docs/runbooks/[service-name].md` | `observability-and-instrumentation` |
 | **Evolution** | Deprecation Notice & Migration | `templates/deprecation-notice.md` | `docs/migrations/[slug]-deprecation.md` | `deprecation-and-migration` |
-| **Learning** | Experiment Brief & Tracking Plan | `templates/experiment-brief.md`, `templates/tracking-plan.md` | `docs/experiments/[id].md`, `docs/analytics/tracking-plan.md` | `ab-testing`, `analytics` |
+| **Learning** | Growth Experiment Brief | `templates/experiment-brief.md` | `docs/experiments/[exp-id]-[slug].md` | `ab-testing` |
+| **Learning** | Event Tracking Plan & Schemas | `templates/tracking-plan.md` | `docs/analytics/tracking-plan.md` | `analytics` |
 | **Security** | STRIDE-A Threat Model | `templates/threat-model.md` | `docs/security/threat-model-[system].md` | `threat-model-analyst` |
 | **Governance** | Engineering Constitution & Rules | `templates/constitution.md` | `AGENTS.md` / `CLAUDE.md` / `.agent/constitution.md` | `writing-for-agents`, `context-engineering` |
 
