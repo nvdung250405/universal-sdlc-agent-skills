@@ -28,7 +28,7 @@ Activities are iterative, overlapping, and non-linear. Skip artifacts that add n
     - Use `domain-modeling` to unify domain entities, value objects, and ubiquitous language across all subsystem boundaries.
     - Use `codebase-design` to define deep module seams and interface segregation.
     - Apply `api-contract-testing` to generate wire-level compatibility fixtures and provider-consumer contract tests based on these centralized specifications.
-11. Define persistence architecture: select database engines (relational/document/time-series), replication, and data partitioning strategies. Align persistence models to support the established system contracts.
+11. Define persistence architecture with `database-design`: select database engines (relational/document/time-series), ORM/data access layers, replication, connection pooling, and data partitioning strategies. Align persistence schemas and indexing models to support the established system contracts.
 12. Use `documentation-and-adrs` to record material architectural decisions and trade-offs in `docs/adr/ADR-NNN-[slug].md` (from `templates/ADR.md`).
 13. **Stage-Gate Review (Architecture Hand-off via Security & FinOps):**
     - Run `threat-model-analyst` to produce a STRIDE-A threat model, data flow diagram (DFD), and abuse case mitigations in `docs/security/threat-model-[system].md` (from `templates/threat-model.md`). Coordinate with `security-and-hardening` to verify trust boundaries.
