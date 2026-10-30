@@ -2,11 +2,12 @@
 
 Use only when scope is unambiguous, risk is low, and the change does not affect public contracts, data migrations, security boundaries or production state.
 
-1. Read the relevant code, repository guidance and applicable skill.
-2. State a concise acceptance condition before editing.
-3. Implement a small change; add/update tests for behavior.
-4. Run targeted checks, then any reasonably fast required project checks.
-5. Review the diff for unintended changes and security/regression risks.
-6. Report exact evidence and remaining uncertainty.
+1. **Context & Scoping**: Read the relevant code, repository guidance, and existing tests. Use `spec-driven-development` only if an existing feature spec needs clarification or behavior is ambiguous.
+2. **Define Acceptance Condition**: State a concise, verifiable acceptance condition before editing.
+3. **Atomic Implementation**: Make the smallest surgical change using `incremental-implementation`. Add or update regression/unit tests using `test-driven-development` when behavior changes.
+4. **Targeted Verification**: Run focused tests, linters, and project quality checks.
+5. **Evidence Gate**: Run `verification-before-completion` to capture fresh terminal output confirming all checks passed and zero unexpected regressions exist.
+6. **Diff & Safety Review**: Review `git diff` using `code-review-and-quality` for unintended side-effects, formatting noise, or security risks.
+7. **Honest Reporting**: Report exact command execution evidence and remaining uncertainty.
 
-Escalate to the full feature loop when requirements become ambiguous, several independently testable capabilities appear, or architecture/data/security risks emerge.
+Escalate to `workflows/feature-loop.md` when requirements become ambiguous, several independently testable capabilities appear, or architecture, database, or security risks emerge.

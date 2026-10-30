@@ -21,15 +21,16 @@ Use this workflow for active production or staging incidents affecting service s
 6. **Telemetry Deep-Dive**: Once service is restored or stabilized, use `observability-and-instrumentation` and `service-mesh-observability` to correlate traces, error spikes, and database pool saturation.
 7. **Isolate in Non-Production**: Use `systematic-debugging` to reproduce the failure in staging or a local reproduction environment. Do not perform high-risk exploratory experiments directly on production.
 8. **Develop Smallest Surgical Fix**: Write a regression test proving the failure, implement the fix with `test-driven-development`, and verify against production-equivalent volume/edge conditions.
+9. **Verification Gate**: Execute `verification-before-completion` to document build, test, and health check pass logs before promoting the fix to production or declaring recovery.
 
 ## 3. Postmortem, Action Items & Prevention
-9. **Author Blameless Postmortem**: Scaffold and publish `docs/incidents/[YYYYMMDD-slug]/postmortem.md` (from `templates/incident-postmortem.md`) within 48 hours:
+10. **Author Blameless Postmortem**: Scaffold and publish `docs/incidents/[YYYYMMDD-slug]/postmortem.md` (from `templates/incident-postmortem.md`) within 48 hours:
    - Summary and customer impact (duration, % requests affected).
    - Detailed timeline in UTC.
    - Root cause analysis using 5 Whys.
    - What went well vs. where response was delayed or fortunate.
-10. **Track Preventative Action Items**: Convert preventative measures (index additions, alert threshold tuning, pipeline gates, circuit breakers) into concrete backlog tickets with designated owners and target completion dates.
-11. **Update Runbooks & Alerts**: Ensure `docs/runbooks/[service-name].md` and alert thresholds are updated to catch or auto-mitigate similar failure modes in the future.
+11. **Track Preventative Action Items**: Convert preventative measures (index additions, alert threshold tuning, pipeline gates, circuit breakers) into concrete backlog tickets with designated owners and target completion dates.
+12. **Update Runbooks & Alerts**: Ensure `docs/runbooks/[service-name].md` and alert thresholds are updated to catch or auto-mitigate similar failure modes in the future.
 
 ---
 

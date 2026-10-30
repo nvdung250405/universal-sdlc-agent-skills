@@ -6,7 +6,7 @@ Every stage or agent handing work to another must provide:
 - Authoritative artifact paths and stable requirement/feature/ADR IDs.
 - Decisions made and the rationale; distinguish approved decisions from proposals.
 - Files changed and current state of the worktree.
-- Commands actually executed and their pass/fail/blocked status.
+- Commands actually executed, their pass/fail/blocked status, and empirical verification evidence captured via `verification-before-completion`.
 - Failed approaches and why they failed.
 - Open questions, assumptions and risks.
 - The exact next action and its expected output.

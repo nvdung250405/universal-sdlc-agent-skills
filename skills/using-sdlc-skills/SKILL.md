@@ -68,7 +68,7 @@ Task Intake ──► Discover & Select ──► Load & Scaffold ──► Exec
 | Web UI runtime verification | Choose `webapp-testing` for Playwright automation or `browser-testing-with-devtools` for DevTools/MCP inspection. Use both only when they supply distinct needed evidence. |
 | Release / deployment | `verification-before-completion` → `code-review-and-quality` and `security-and-hardening` as applicable → `ci-cd-and-automation` → `shipping-and-launch` → `observability-and-instrumentation`; production/destructive operations require approval. |
 | Production incident | Follow `workflows/incident-response.md` first to mitigate/restore; only then use `systematic-debugging` for root cause and regression work. |
-| Transfer between sessions/agents | `task-handoff` first; use `using-git-worktrees` when an isolated workspace is appropriate; read linked authoritative files, not copied summaries alone. |
+| Transfer between sessions/agents | Follow `workflows/agent-handoff-contract.md`: `task-handoff` first; use `using-git-worktrees` when an isolated workspace is appropriate; read linked authoritative files, not copied summaries alone. |
 | Finish a development branch | `verification-before-completion` → `code-review-and-quality` → `git-workflow-and-versioning`; follow repository merge/PR policy. |
 
 ## Canonical artifact contract

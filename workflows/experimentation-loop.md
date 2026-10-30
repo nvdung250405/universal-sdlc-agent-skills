@@ -27,10 +27,11 @@ Use this workflow when testing competing UX variants, optimizing conversion funn
 10. **Run to Fixed Sample Size**: Avoid premature stopping (peeking problem); run until pre-calculated sample size or duration is achieved.
 
 ## 5. Statistical Evaluation & Rollout Decision
-11. **Analyze Results**: Calculate conversion rates, relative lift, standard error, and p-value.
+11. **Analyze Results**: Calculate conversion rates, relative lift, standard error, and p-value using `ab-testing` and `analytics`.
 12. **Make Rollout Decision**:
     - **Winner ($p < 0.05$ with positive lift)**: Roll out Treatment to 100% of users. Remove feature flags and dead control code using `code-simplification`.
     - **Inconclusive / Neutral**: Analyze secondary signals. Decide whether to iterate hypothesis or discard.
     - **Degraded**: Roll back immediately to Control.
-13. **Record Learnings**: Document final findings, statistical tables, and next test recommendations in `docs/experiments/[exp-id]-[slug].md`.
+13. **Verification Gate**: Run `verification-before-completion` after flag removal and cleanup to capture fresh test suite and build evidence, proving zero regressions in production paths.
+14. **Record Learnings**: Document final findings, statistical tables, and next test recommendations in `docs/experiments/[exp-id]-[slug].md`.
 
