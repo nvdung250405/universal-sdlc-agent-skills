@@ -7,7 +7,7 @@ Bộ skill phát triển phần mềm có thể cài trên nhiều coding agent,
 ```text
 skills/                    # 26 Lean Core skills (kỷ luật công nghệ nền tảng, cài đặt mặc định)
 extras/                    # 37 Extras skills (chuyên môn hóa sâu, nạp theo nhu cầu)
-workflows/                 # 8 quy trình: full SDLC, feature loop, bug fix, quick change, incident, handoff, experimentation, migration
+workflows/                 # 11 quy trình: full SDLC, feature loop, bug fix, quick change, incident, refactoring, performance, upgrade, handoff...
 templates/                 # 22 canonical artifact templates theo 16 stages (PRD, spec, ADR, architecture, threat model, tasks, postmortem, runbook...)
 docs/sdlc-practical-matrix.md # Master Matrix 16 stages và 63 skills chuẩn hóa
 docs/stage-skill-map.md    # Stage → Output → Core & Extras routing map

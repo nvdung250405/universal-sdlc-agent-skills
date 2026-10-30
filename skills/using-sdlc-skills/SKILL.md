@@ -39,7 +39,7 @@ Task Intake ──► Discover & Select ──► Load & Scaffold ──► Exec
 | New user-facing feature | Follow `workflows/feature-loop.md`: `pm-product-spec` if product intent/scope is not already defined → `pm-user-story` to author Story and Given/When/Then AC in the canonical feature spec → `pm-spec-quality-audit` for significant/ambiguous/high-risk specs → `spec-driven-development` to structure spec/plan/tasks when useful → architecture/API/UI skills only when the change warrants them → `planning-and-task-breakdown` → implementation and verification. |
 | Small, clear feature/change | Follow `workflows/quick-change.md`: Read repository guidance/context → `spec-driven-development` only if a feature spec is missing or behavior is ambiguous → `incremental-implementation` and `test-driven-development` when behavior changes → `verification-before-completion` → `code-review-and-quality` as risk warrants. |
 | Bug or unexpected behavior | Follow `workflows/bug-fix.md`: `systematic-debugging` → reproduce and isolate the root cause → regression test/TDD where practical → smallest fix → project verification → `verification-before-completion` and review. |
-| Refactor / Code simplification | Define behavior that must remain unchanged → `planning-and-task-breakdown` only if the change is multi-step → `incremental-implementation` / `code-simplification` → regression verification; do not invent User Stories for purely technical work. |
+| Refactor / Code simplification | Follow `workflows/refactoring.md`: establish characterization tests → `improve-codebase-architecture` and `codebase-design` for deep modules → `code-simplification` micro-steps → regression verification. |
 | Architecture review & deep modules | `software-architecture` for component boundaries and C4 models → `codebase-design` for deep module design → `domain-modeling` for ubiquitous language and glossaries → `documentation-and-adrs` for decisions with trade-offs. |
 | Codebase architecture improvement | `improve-codebase-architecture` to scan for shallow modules, leaky abstractions, or architectural drift → propose incremental remedies. |
 | Tracer-bullet ticket breakdown | `to-tickets` to convert plans or specifications into self-contained tracer-bullet task tickets declaring explicit dependency edges. |
@@ -51,7 +51,8 @@ Task Intake ──► Discover & Select ──► Load & Scaffold ──► Exec
 | Authentication / authorization flow | `auth-implementation-patterns` for session/token lifecycles, OAuth2/OIDC boundaries and RBAC policy enforcement; coordinate with `security-and-hardening`. |
 | Threat modeling & security analysis | `threat-model-analyst` for STRIDE threat modeling, data-flow diagrams, and abuse cases; coordinate with `security-and-hardening`. |
 | Secrets & CI credential handling | `secrets-management` for secret stores, workload identity and credential rotation; coordinate with `ci-cd-and-automation`. |
-| Performance / load testing | `k6-load-testing` for API/browser load scenarios, stress testing and SLA thresholds; `performance-optimization` for runtime profiling. |
+| Performance profiling & optimization | Follow `workflows/performance-tuning.md`: baseline benchmark with `k6-load-testing` / DevTools → bottleneck profiling (`database-design`, profilers) → surgical fix with `performance-optimization` → comparative before/after verification. |
+| Dependency / library / CVE upgrade | Follow `workflows/dependency-upgrade.md`: audit changelogs / CVEs with `security-and-hardening` → isolated workspace via `using-git-worktrees` → update manifests & lockfiles → fix breaking changes → verify regressions. |
 | Container / platform orchestration | `docker-expert` for container optimization/hardening; `kubernetes-architect` for cluster orchestration and GitOps; `terraform-specialist` for IaC module design and state. |
 | Service mesh & distributed tracing | `service-mesh-observability` for Istio/Linkerd telemetry, distributed tracing, envoy metrics, and communication SLOs. |
 | Cloud cost governance & FinOps | `cost-optimization` for resource rightsizing, spend anomaly detection, tagging enforcement, and multi-cloud cost reduction. |
@@ -97,34 +98,9 @@ Use repository-native conventions if equivalent artifacts already exist. Otherwi
 - `docs/analytics/tracking-plan.md`: telemetry event tracking taxonomy and schemas (seeded from `templates/tracking-plan.md`).
 - `docs/security/threat-model-[system].md`: STRIDE-A threat modeling and risk mitigations (seeded from `templates/threat-model.md`).
 
-### Artifact & Template Contract Mapping
+For the complete 22-row contract mapping table and CLI scaffolding aliases, see [references/artifact-contracts.md](references/artifact-contracts.md) or `templates/README.md`.
 
-| Stage | Expected Canonical Artifact | Starter Template | Primary Owner Skill |
-|---|---|---|---|
-| **Discovery** | `docs/discovery/[initiative]/opportunity-brief.md` | `templates/opportunity-brief.md` | `interview-me`, `idea-refine`, `customer-research` |
-| **Requirements** | `docs/prd.md` | `templates/PRD.md` | `pm-product-spec` |
-| **Requirements** | `docs/features/<feature-id>/spec.md` | `templates/feature-spec.md` | `spec-driven-development`, `pm-user-story` |
-| **Requirements** | `docs/specs/SRS.md` (or `docs/srs.md`) | `templates/SRS.md` | `requirements-engineering` |
-| **Requirements** | `docs/specs/RTM.md` (or `docs/rtm.md`) | `templates/RTM.md` | `requirements-engineering` |
-| **Architecture** | `docs/architecture.md` | `templates/architecture-overview.md` | `software-architecture` |
-| **Architecture** | `docs/adr/ADR-NNN-[slug].md` | `templates/ADR.md` | `documentation-and-adrs` |
-| **Architecture** | `docs/features/<feature-id>/design.md` | `templates/DDS.md` | `software-architecture`, `codebase-design` |
-| **Planning** | `docs/features/<feature-id>/plan.md` | `templates/plan.md` | `spec-driven-development`, `planning-and-task-breakdown` |
-| **Planning** | `docs/features/<feature-id>/tasks.md` | `templates/tasks.md` | `planning-and-task-breakdown` |
-| **Planning** | `.agent/tasks/<task-id>.md` | `templates/task-handoff.md` | `task-handoff` |
-| **Verification** | `docs/features/<feature-id>/acceptance-report.md` | `templates/acceptance-report.md` | `verification-before-completion` |
-| **Review** | `.github/pull_request_template.md` (or PR body) | `templates/pull-request.md` | `code-review-and-quality` |
-| **Release** | `docs/releases/v[X.Y.Z].md` | `templates/release-notes.md` | `shipping-and-launch` |
-| **Release** | `docs/releases/release-checklist.md` | `templates/release-checklist.md` | `shipping-and-launch` |
-| **Operations** | `docs/incidents/[YYYYMMDD-slug]/postmortem.md` | `templates/incident-postmortem.md` | `observability-and-instrumentation` |
-| **Operations** | `docs/runbooks/[service-name].md` | `templates/runbook.md` | `observability-and-instrumentation` |
-| **Evolution** | `docs/migrations/[slug]-deprecation.md` | `templates/deprecation-notice.md` | `deprecation-and-migration` |
-| **Learning** | `docs/experiments/[exp-id]-[slug].md` | `templates/experiment-brief.md` | `ab-testing` |
-| **Learning** | `docs/analytics/tracking-plan.md` | `templates/tracking-plan.md` | `analytics` |
-| **Security** | `docs/security/threat-model-[system].md` | `templates/threat-model.md` | `threat-model-analyst` |
-| **Governance** | `AGENTS.md` / `docs/constitution.md` | `templates/constitution.md` | `context-engineering`, `writing-for-agents` |
-
-Templates in `templates/` (and router assets `assets/templates/`) are starters, not required extra documents. Do not create both `feature-spec.md` and `spec.md` for the same feature; copy the selected template into the canonical path instead of maintaining two authoritative files. See `templates/README.md` for full details.
+Templates in `templates/` (and router assets `assets/templates/`) are starters, not required extra documents. Do not create both `feature-spec.md` and `spec.md` for the same feature; copy the selected template into the canonical path instead of maintaining two authoritative files.
 
 ## Cross-skill invariants
 
