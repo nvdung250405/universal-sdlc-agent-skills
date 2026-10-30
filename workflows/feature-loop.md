@@ -10,14 +10,14 @@ Use for implementing a feature in an existing codebase. Read existing repository
 3. Use `pm-user-story` to add/refine user-facing stories and Given/When/Then Acceptance Criteria directly inside `docs/features/<feature-id>/spec.md`. For purely technical changes, use a technical spec or ADR instead of fabricating stories.
 4. Run `pm-spec-quality-audit` if the specification is complex, ambiguous, or needs a pre-build quality gate.
 
-## 2. Architecture & Design Seams (Conditional)
-5. Invoke specialist skills only when the change crosses boundaries:
-   - Component boundaries or C4 models: `software-architecture`
-   - Database schema or migrations: `database-design`
-   - REST/gRPC/GraphQL contract changes: `api-and-interface-design` and `api-contract-testing`
-   - Design trade-offs: `documentation-and-adrs` (`docs/adr/ADR-NNN-[slug].md`)
-   - Threat boundaries or sensitive data: `threat-model-analyst` and `security-and-hardening`
-   - UI styling and design tokens: `frontend-design` and `frontend-ui-engineering`
+## 2. Contract-First Architecture & Design Seams
+5. Follow **Contract-First** design: establish observable interfaces and boundaries before internal persistence implementation:
+   - **Interface & Wire Contracts (Contract-First):** Use `api-and-interface-design` and `api-contract-testing` to define REST/gRPC/GraphQL schemas, request/response models, and compatibility fixtures before modifying persistence layers.
+   - **Persistence & Migration (Persistence Second):** Once interface contracts are defined, invoke `database-design` to design normalized tables, indexing strategy, and zero-downtime database migrations required to satisfy the contract.
+   - **Component Boundaries & Models:** Use `software-architecture` when feature logic alters module seams, C4 diagrams, or domain ownership.
+   - **Design Trade-offs:** Use `documentation-and-adrs` to record meaningful architectural decisions in `docs/adr/ADR-NNN-[slug].md` (from `templates/ADR.md`).
+   - **Security & Threat Surface:** Use `threat-model-analyst` and `security-and-hardening` if the feature crosses trust boundaries, handles credentials, or processes sensitive data.
+   - **UI Styling & Tokens:** Use `frontend-design` and `frontend-ui-engineering` for design tokens and layout composition.
 
 ## 3. Planning & Task Breakdown
 6. Use `planning-and-task-breakdown` as the **sole author** of the final `docs/features/<feature-id>/tasks.md` (from `templates/tasks.md`). Every task must specify target file paths, dependencies, acceptance conditions, and exact verification commands.

@@ -18,8 +18,8 @@ Activities are iterative, overlapping, and non-linear. Skip artifacts that add n
 7. Run formal `requirements-engineering` only when formal system specifications (`docs/specs/SRS.md`) or regulatory traceability (`docs/specs/RTM.md`) are required.
 
 ## 3. Architecture Baseline, Deep Design & Security
-8. Use `software-architecture` to establish component boundaries, C4 models, integration patterns, and data ownership in `docs/architecture.md` (from `templates/architecture-overview.md`).
-9. Use `codebase-design` for deep module seams, `domain-modeling` for ubiquitous domain language, and `database-design` for persistence schema, normalization, and indexing strategy.
+8. Use `software-architecture` to establish component boundaries, C4 models, integration patterns, and high-level data storage strategy/data ownership in `docs/architecture.md` (from `templates/architecture-overview.md`).
+9. Use `domain-modeling` for ubiquitous domain language and core business entity models; use `codebase-design` for deep module seams. Detailed persistence schemas, table normalization, and indexing are deferred to individual feature loops to preserve Contract-First discipline.
 10. Run `threat-model-analyst` to produce a STRIDE-A threat model, data flow diagram (DFD), and abuse case mitigations in `docs/security/threat-model-[system].md` (from `templates/threat-model.md`). Coordinate with `security-and-hardening`.
 11. Use `documentation-and-adrs` to record material architectural decisions and trade-offs in `docs/adr/ADR-NNN-[slug].md` (from `templates/ADR.md`).
 
