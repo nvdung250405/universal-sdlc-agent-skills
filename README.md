@@ -1,4 +1,4 @@
-# Universal SDLC Agent Skills Pack
+# SDLC Skills Pack
 
 Bộ skill phát triển phần mềm có thể cài trên nhiều coding agent, tuyển chọn từ các upstream đã pin phiên bản và kết hợp bằng một router duy nhất cùng bộ artifact contract thống nhất. Mục tiêu là tái sử dụng skill tốt, tránh trùng chức năng, phân tầng **Core (26 skills)** và **Extras (37 skills)**, áp dụng cơ chế **Nạp kỹ năng theo nhu cầu (Demand-Driven Skill Loading)**.
 
@@ -39,15 +39,15 @@ scripts/scaffold.py        # Khởi tạo nhanh canonical artifacts từ templat
 | [Agentic SDLC Kit](https://github.com/zeeshanhanif/agentic-sdlc-kit) | Formal requirements/SRS và software architecture | 2 skill adapt cục bộ trong `skills/` (Core); refresh thủ công có bảo toàn content hash |
 | [William Hobson Agents](https://github.com/wshobson/agents) | Auth patterns, secrets management, screen reader, service mesh, cost optimization | 5 skill adapt trong `extras/`; license MIT |
 | [Agentic Awesome Skills (sickn33)](https://github.com/sickn33/agentic-awesome-skills) | Database design, Docker, k6 load testing, Terraform, Kubernetes | 5 skill adapt (1 trong `skills/`, 4 trong `extras/`); license Code MIT, docs CC BY 4.0 |
-| [API Contract Testing](https://github.com/universal-sdlc-agent-skills-pack/universal-sdlc-agent-skills) | Wire-level provider/consumer contract testing & fixtures | 1 skill adapt trong `extras/`; license MIT |
+| [API Contract Testing](https://github.com/nvdung250405/sdlc-skills-pack) | Wire-level provider/consumer contract testing & fixtures | 1 skill adapt trong `extras/`; license MIT |
 | [GitHub Spec Kit](https://github.com/github/spec-kit) | Tham khảo format Story/AC, independent test, plan/tasks | Nguồn tham khảo, không bundle command/skill nguyên bản |
 | [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) | Tham khảo cách tổ chức vai trò và workflow | Nguồn tham khảo; không bundle implementation của BMAD |
 
 **Quy mô hiện tại:** Đúng **63 kỹ năng duy nhất** tương ứng với Master Matrix 16 stages:
 - **26 Core skills** trong `skills/`: Nền tảng kỹ thuật bắt buộc cho mọi agent SDLC, độc lập công cụ, cài đặt mặc định.
 - **37 Extras skills** trong `extras/`: Lựa chọn nạp theo ngữ cảnh thực tế (stack, vai trò, hạ tầng, MCP).
-- **Exemplar Reference**: [examples/stripe-integration](file:///c:/Users/Dung/Documents/universal-sdlc-agent-skills-pack/universal-sdlc-agent-skills/examples) được lưu giữ riêng làm thư viện mẫu tham khảo, loại khỏi danh mục đóng gói chính thức.
-- **Deprecated Skills Archive**: [archive/deprecated-skills](file:///c:/Users/Dung/Documents/universal-sdlc-agent-skills-pack/universal-sdlc-agent-skills/archive/deprecated-skills) lưu trữ `finishing-a-development-branch` và `requesting-code-review`.
+- **Exemplar Reference**: [examples/stripe-integration](examples/stripe-integration) được lưu giữ riêng làm thư viện mẫu tham khảo, loại khỏi danh mục đóng gói chính thức.
+- **Deprecated Skills Archive**: [archive/deprecated-skills](archive/deprecated-skills) lưu trữ `finishing-a-development-branch` và `requesting-code-review`.
 
 ## Workflow và artifact ownership
 

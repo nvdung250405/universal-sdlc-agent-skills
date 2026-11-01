@@ -72,7 +72,7 @@ This pack redistributes selected upstream skills and contains a small number of 
 - Adapted skills: 1 under `skills/` (Core: `database-design`), 4 under `extras/` (`docker-expert`, `k6-load-testing`, `terraform-specialist`, `kubernetes-architect`).
 
 ### API Contract Testing
-- Source: https://github.com/universal-sdlc-agent-skills-pack/universal-sdlc-agent-skills
+- Source: https://github.com/nvdung250405/sdlc-skills-pack
 - License: MIT — see `third_party/api-contract-testing/LICENSE`
 - Adapted skills: 1 under `extras/` (`api-contract-testing`).
 - Locally adapted contract testing skill for consumer-provider compatibility, wire-level schema validation, and fixture-driven regressions.
